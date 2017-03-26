@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CRUD Application</title>
+  <title>User Management Application</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,5 +18,5 @@
 <body>
 
 <div id="header">
-<label><a href="index.php">CRUD Application</a></label>
+<label><a href="index.php">User Management Application</a></label>
 </div>

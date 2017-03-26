@@ -56,7 +56,7 @@ if(isset($_GET['edt_id']))
             <input type="date" class="form-control" id="dob" name="dob" placeholder="Date Of Birthday" value="<?php echo $row['dob'] ?>" required>
           </div>
           <div class="form-group">
-            <textarea class="form-control" type="textarea" id="about_us" name="about_us" placeholder="Message" maxlength="140" rows="7" required><?php echo $row['about_us'] ?></textarea>
+            <textarea class="form-control" type="textarea" id="about_us" name="about_us" placeholder="Message" rows="7" required><?php echo $row['about_us'] ?></textarea>
           </div>
             
         <input type="submit" id="submit" name="update" value="Submit Form" class="btn btn-primary pull-right" onclick="Validation();">

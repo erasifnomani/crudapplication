@@ -18,7 +18,7 @@ class CRUD
 	// function for read
 	public function read()
 	{
-		return mysql_query("SELECT * FROM users ORDER BY user_id ASC");
+		return mysql_query("SELECT * FROM users ORDER BY user_id DESC");
 	}
 	// function for read
 	

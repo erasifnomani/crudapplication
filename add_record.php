@@ -43,7 +43,7 @@
             </span>
           </div>
           <div class="form-group">
-            <textarea class="form-control" type="textarea" name="about_us" placeholder="Message" maxlength="140" rows="7" ng-model="about_us" required></textarea>
+            <textarea class="form-control" type="textarea" name="about_us" placeholder="Message" rows="7" ng-model="about_us" required></textarea>
             <span style="color:red" ng-show="myForm.about_us.$touched && myForm.about_us.$invalid">
               <span ng-show="myForm.about_us.$error.required">About Us is required.</span>
             </span>

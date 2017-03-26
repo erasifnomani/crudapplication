@@ -3,11 +3,11 @@ include_once 'inc/class.crud.php';
 $crud = new CRUD();
 if(isset($_POST['save']))
 {
-	$name = $_POST['name'];
-	$country = $_POST['country'];
-	$email = $_POST['email'];
-	$mobile_no = $_POST['mobile_no'];
-	$about_us = $_POST['about_us'];
+	$name = strip_tags($_POST['name']);
+	$country = strip_tags($_POST['country']);
+	$email = strip_tags($_POST['email']);
+	$mobile_no = strip_tags($_POST['mobile_no']);
+	$about_us = mysql_real_escape_string($_POST['about_us']);
 	$dob = date("Y-m-d", strtotime($_POST['dob']));
 
 	
@@ -28,12 +28,12 @@ if(isset($_GET['del_id']))
 
 if(isset($_POST['update']))
 {	
-	$id = $_GET['edt_id'];
-	$name = $_POST['name'];
-	$country = $_POST['country'];
-	$email = $_POST['email'];
-	$mobile_no = $_POST['mobile_no'];
-	$about_us = $_POST['about_us'];
+	$id = strip_tags($_GET['edt_id']);
+	$name = strip_tags($_POST['name']);
+	$country = strip_tags($_POST['country']);
+	$email = strip_tags($_POST['email']);
+	$mobile_no = strip_tags($_POST['mobile_no']);
+	$about_us = mysql_real_escape_string($_POST['about_us']);
 	$dob = date("Y-m-d", strtotime($_POST['dob']));
 	
 	$crud->update($name,$country,$email,$mobile_no,$about_us,$dob,$id);
